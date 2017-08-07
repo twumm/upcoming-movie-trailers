@@ -17,11 +17,11 @@ POSTER_BASE_URL = "https://image.tmdb.org/t/p/w500"
 YOUTUBE_TRAILER_BASE_URL = "https://www.youtube.com/watch?v="
 MOVIES = []
 
-for item in MOVIE_DATA["results"]:
+for item in MOVIE_DATA["results"][:10]:
     # Loop through the response received from api.themoviedb.org and pick out
     # the title, overview and movie image
     movie_title = item["title"]
-    movie_storyline = item["overview"][0:200].encode('utf8') + "...read more"
+    movie_storyline = item["overview"][:200].encode('utf8') + "...read more"
     poster_image = POSTER_BASE_URL + item["poster_path"]
     release_date = item["release_date"]
 

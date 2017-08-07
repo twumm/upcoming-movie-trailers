@@ -5,7 +5,7 @@ import webbrowser
 
 class Movie():
     '''This program stores details on movies and shows their trailers'''
-    # the __init__ function accepts 5 variables in order to instantiate a movie
+    # the __init__ function accepts 5 variables(str,str,str,str,float) in order to instantiate a movie
     def __init__(self, movie_title, movie_storyline, poster_image,
                  trailer_youtube, release_date):
         '''Accepts 5 variables in order to instantiate a movie'''
