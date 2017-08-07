@@ -48,20 +48,21 @@ main_page_head = '''
             height: 100%;
         }
         .movie-tile {
-            margin-bottom: 20px;
-            padding-top: 20px;
+            margin-bottom: 30px;
+            padding: 20px;
             border-radius: 10px;
-            min-height: 500px;
+            cursor: pointer;
+            width: 330px;
         }
-        .movie-tile:hover {
+        /*.movie-tile:hover {
             background-color: #EEE;
             cursor: pointer;
-        }
+        }*/
         .movie-tile h2 {
             color: white;
             font-size: 20px;
         }
-        .movie-tile:hover h2 {
+        /*.movie-tile:hover h2 {
             color: black;
             font-size: 20px;
         }
@@ -73,7 +74,7 @@ main_page_head = '''
             display: block;
             color: black;
             font-size: 10px;
-        }
+        }*/
         .scale-media {
             padding-bottom: 56.25%;
             position: relative;
@@ -155,9 +156,8 @@ main_page_content = '''
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="220" height="342">
-    <h2>{movie_title}</h2>
-    <p>{movie_storyline}</p>
-
+    <!--<h2>{movie_title}</h2>
+    <p>{movie_storyline}</p>-->
 </div>
 '''
 
